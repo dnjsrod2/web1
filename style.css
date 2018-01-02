@@ -1,0 +1,40 @@
+h1{
+  margin: 0;
+  border-bottom: solid 2px gray;
+  padding: 20px;
+  text-align: center;
+
+}
+ul{
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 35px;
+  border-right: solid 2px gray;
+  width: 100px;
+}
+body{
+  margin:0;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+@media (max-width:800px) {
+  #grid {
+    display: block;
+  }
+  #grid #article{
+    margin-left: 20px;
+  }
+  #grid ul{
+    border-right: none;
+    margin-bottom: 20px;
+  }
+  h1{
+    border-bottom: none;
+  }
+}
